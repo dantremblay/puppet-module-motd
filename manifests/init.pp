@@ -109,6 +109,7 @@ class motd (
   case $issue_ensure {
     'file', 'present', 'absent': {
       # noop, these values are valid
+      # noop, these values are valid
     }
     default: {
       fail("Valid values for \$issue_ensure are \'absent\', \'file\', or \'present\'. Specified value is ${issue_ensure}")
